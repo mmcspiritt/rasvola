@@ -61,10 +61,9 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#FFD1DC] min-h-screen font-serif md:pt-20"> {/* Padding top only for md and above */}
-      {/* Navigation Section */}
-      <nav className="bg-white p-4 md:fixed md:top-0 md:left-0 md:right-0 md:z-50 md:shadow-md">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <section className="bg-[#FFD1DC] min-h-screen font-serif md:pt-20">
+      <header className="bg-white p-4 md:fixed md:top-0 md:left-0 md:right-0 md:z-50 md:shadow-md">
+        <nav className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <ul className="flex space-x-4 md:space-x-6 text-[#FF66C4] font-sans text-xs md:text-sm mb-2 md:mb-0">
             <li className="cursor-pointer hover:underline" onClick={() => scrollToSection(menuRef)}>Nuestros Helados</li>
             <li className="cursor-pointer hover:underline">
@@ -84,46 +83,44 @@ export default function Home() {
               <a href="mailto:hola@rasvola.com">Contacto</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
       <main className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
-        {/* Hero Section */}
         <section className="flex flex-col items-center mb-12 md:mb-16 lg:mb-20">
-          <div className="max-w-6xl w-full mx-auto">
+          <article className="max-w-6xl w-full mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8 lg:space-x-12">
-              <div className="md:w-2/5 mb-8 md:mb-0">
+              <figure className="md:w-2/5 mb-6 md:mb-0">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20(3)-lu6GqKAJHkRHjknaHSXunIx1KyXp7E.png" 
                   alt="Rasvola Logo" 
-                  className="mx-auto w-48 md:w-56 lg:w-64 xl:w-72"
+                  className="mx-auto w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64"
                 />
-              </div>
+              </figure>
               <div className="md:w-3/5">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FF66C4] mb-6 lg:mb-8 text-center md:text-left leading-tight font-fraunces">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FF66C4] mb-4 sm:mb-6 lg:mb-8 text-center md:text-left leading-tight font-fraunces">
                   {content[language].heroTitle}{' '}
                   <span className="text-white whitespace-nowrap">{content[language].heroHighlight}</span>{' '}
                   <span className="whitespace-nowrap">{content[language].heroTitleEnd}</span>
                 </h1>
-                <div className="flex justify-center md:justify-start space-x-4 lg:space-x-6">
-                  <Button className="bg-[#FF66C4] text-white hover:bg-[#FF4DAD] text-base md:text-lg lg:text-xl px-6 py-3 lg:px-8 lg:py-4" onClick={() => scrollToSection(menuRef)}>
+                <div className="flex justify-center md:justify-start space-x-3 sm:space-x-4 lg:space-x-6">
+                  <Button className="bg-[#FF66C4] text-white hover:bg-[#FF4DAD] text-sm sm:text-base md:text-lg lg:text-xl px-3 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4" onClick={() => scrollToSection(menuRef)}>
                     {content[language].menuButton}
                   </Button>
                   <Button 
                     variant="outline" 
-                    className="border-[#FF66C4] text-[#FF66C4] hover:bg-[#FF66C4] hover:text-white text-base md:text-lg lg:text-xl px-6 py-3 lg:px-8 lg:py-4"
+                    className="border-[#FF66C4] text-[#FF66C4] hover:bg-[#FF66C4] hover:text-white text-sm sm:text-base md:text-lg lg:text-xl px-3 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4"
                     onClick={() => window.open('https://www.instagram.com/rasvola/', '_blank')}
                   >
-                    <Instagram className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 mr-2" />
+                    <Instagram className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 mr-2" />
                     {content[language].instagramButton}
                   </Button>
                 </div>
               </div>
             </div>
-          </div>
+          </article>
         </section>
 
-        {/* Image Grid Section */}
         <section className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-12 md:mb-16 lg:mb-20">
           <div className="aspect-[1855/1285] relative">
             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-bFSorKEfqUqOhBqnsDFVaMmaRubub6.png" alt="Stylized ice cream cart" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
@@ -145,10 +142,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Menu Section */}
         <section ref={menuRef} className="bg-white py-8 sm:py-12 lg:py-16 px-4 lg:px-8 rounded-lg mb-12 md:mb-16 lg:mb-20">
           <div className="container mx-auto">
-            <div className="text-center mb-8 lg:mb-12">
+            <header className="text-center mb-8 lg:mb-12">
               <h2 className="text-[#ff66c4] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 lg:mb-6 relative inline-block font-fraunces">
                 {content[language].title}
                 <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#ffd700] transform skew-x-12"></span>
@@ -164,11 +160,11 @@ export default function Home() {
                   <span className={`text-sm lg:text-base ${language === 'en' ? 'font-bold' : ''}`}>English</span>
                 </div>
               </div>
-            </div>
+            </header>
             <p className="text-center mb-8 md:mb-12 lg:mb-16 text-gray-600 italic text-sm md:text-base lg:text-lg">{content[language].subtitle}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
               {content[language].products.map((product, index) => (
-                <div key={index} className="rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105">
+                <article key={index} className="rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105">
                   <div className="relative group h-48 md:h-64 lg:h-72">
                     <img 
                       src={product.image} 
@@ -188,14 +184,13 @@ export default function Home() {
                       {product.description}
                     </p>
                   </div>
-                </div>
+                </article>
               ))}
             </div>
           </div>
         </section>
       </main>
 
-      {/* Footer Section */}
       <footer className="bg-[#FF66C4] text-white p-6 md:p-8 lg:p-10">
         <div className="container mx-auto text-center">
           <Button 
@@ -214,6 +209,6 @@ export default function Home() {
           </p>
         </div>
       </footer>
-    </div>
+    </section>
   )
 }
