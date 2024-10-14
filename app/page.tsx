@@ -94,25 +94,25 @@ export default function Home() {
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20(3)-lu6GqKAJHkRHjknaHSXunIx1KyXp7E.png" 
                   alt="Rasvola Logo" 
-                  className="mx-auto w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64"
+                  className="mx-auto w-28 sm:w-36 md:w-48 lg:w-56 xl:w-64" // Slightly reduced size on mobile
                 />
               </figure>
               <div className="md:w-3/5">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FF66C4] mb-4 sm:mb-6 lg:mb-8 text-center md:text-left leading-tight font-fraunces">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#FF66C4] mb-4 sm:mb-6 lg:mb-8 text-center md:text-left leading-tight font-fraunces">
                   {content[language].heroTitle}{' '}
                   <span className="text-white whitespace-nowrap">{content[language].heroHighlight}</span>{' '}
                   <span className="whitespace-nowrap">{content[language].heroTitleEnd}</span>
                 </h1>
-                <div className="flex justify-center md:justify-start space-x-3 sm:space-x-4 lg:space-x-6">
-                  <Button className="bg-[#FF66C4] text-white hover:bg-[#FF4DAD] text-sm sm:text-base md:text-lg lg:text-xl px-3 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4" onClick={() => scrollToSection(menuRef)}>
+                <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-3 sm:space-y-0 sm:space-x-4 lg:space-x-6">
+                  <Button className="bg-[#FF66C4] text-white hover:bg-[#FF4DAD] text-base sm:text-lg md:text-xl lg:text-2xl px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5" onClick={() => scrollToSection(menuRef)}>
                     {content[language].menuButton}
                   </Button>
                   <Button 
                     variant="outline" 
-                    className="border-[#FF66C4] text-[#FF66C4] hover:bg-[#FF66C4] hover:text-white text-sm sm:text-base md:text-lg lg:text-xl px-3 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4"
+                    className="border-[#FF66C4] text-[#FF66C4] hover:bg-[#FF66C4] hover:text-white text-base sm:text-lg md:text-xl lg:text-2xl px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5"
                     onClick={() => window.open('https://www.instagram.com/rasvola/', '_blank')}
                   >
-                    <Instagram className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 mr-2" />
+                    <Instagram className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 mr-2" />
                     {content[language].instagramButton}
                   </Button>
                 </div>
