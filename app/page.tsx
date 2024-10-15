@@ -103,7 +103,7 @@ export default function Home() {
                   />
                 </figure>
                 <div className="md:w-3/5">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#FF66C4] mb-4 sm:mb-6 lg:mb-8 text-center md:text-left leading-tight font-fraunces">
+                  <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FF66C4] mb-4 sm:mb-6 lg:mb-8 text-center md:text-left leading-tight font-fraunces">
                     {content[language].heroTitle}{' '}
                     <span className="text-white whitespace-nowrap">{content[language].heroHighlight}</span>{' '}
                     <span className="whitespace-nowrap">{content[language].heroTitleEnd}</span>
