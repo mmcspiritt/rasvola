@@ -143,7 +143,7 @@ export default function Home() {
               <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-lkhJwXxcQELQjaPT1pKiUdGtOn4tgN.png" alt="Helado Escarchado de Rasvola en Roma Norte, Ciudad de México" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
             </div>
             <div className="aspect-[1855/1285] relative">
-              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-bn8cdvZS6mgz4x1h1xKSDULHidLtvl.png" alt="Store photo of Rasvola's ice cream store at Queretaro 74 in Roma Norte" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+              <img src="/images/Store-Front-Rasvola-Location-Roma-Norte.png" alt="Storefront photo of Rasvola's ice cream shop in Roma Norte, Mexico City" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
             </div>
           </section>
 
