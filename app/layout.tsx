@@ -29,6 +29,16 @@ export const metadata: Metadata = {
     description: 'Somos una barra de helados escarchados estilo vintage en Roma Norte, Ciudad de México.',
     images: ['https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20(3)-lu6GqKAJHkRHjknaHSXunIx1KyXp7E.png'],
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png' },
+    ],
+  },
 }
 
 export default function RootLayout({
@@ -70,6 +80,10 @@ export default function RootLayout({
             })
           }}
         />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
